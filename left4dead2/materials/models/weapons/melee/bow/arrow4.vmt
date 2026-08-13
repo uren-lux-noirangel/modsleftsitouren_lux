@@ -1,0 +1,19 @@
+VertexLitGeneric
+{
+	$baseTexture "models\weapons\melee\bow\arrow_color_diffuse"
+	$surfaceprop "wood"
+	
+	$bumpmap "models\weapons\melee\bow\arrow_normal"
+	$phong 1
+	$halflambert 0
+	$phongboost 10.0
+	$allowdiffusemodulation 1
+
+	//$phongexponent 10
+
+	$phongexponenttexture "models\weapons\melee\bow\arrow_phong"
+	$phongfresnelranges "[0.1 1 2]"
+	
+	$color "[1 0.85 0.2]"
+	$blendTintByBaseAlpha 1
+}
