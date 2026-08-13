@@ -1,0 +1,30 @@
+VertexLitGeneric
+{
+	"GPU<2"
+	{
+		$baseTexture "models\weapons\melee\sentry\sentry_diffuse_bakedspec"
+		$surfaceprop "weapon"
+	}
+	"GPU>=2"
+	{
+		$baseTexture "models\weapons\melee\sentry\sentry_diffuse"
+
+		$bumpmap "models\weapons\melee\sentry\sentry_normal"
+		$envmap env_cubemap
+		//$envmap hlmv/cubemap2
+		$basealphaenvmapmask 1
+		
+		$envmaptint "[0.8 0.8 0.8]"
+
+		$phong 1
+		$PhongAlbedoTint 1
+		$halflambert 0
+		$phongboost 2.0
+		//$phongexponent 30
+		$phongexponenttexture "models\weapons\melee\sentry\sentry_phong"
+		$phongfresnelranges "[0.1 1 5]"
+		
+		$surfaceprop "weapon"
+
+	}
+}
