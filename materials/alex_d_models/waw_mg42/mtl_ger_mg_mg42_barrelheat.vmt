@@ -1,0 +1,35 @@
+"VertexLitGeneric"
+{
+	"$baseTexture"	"alex_d_models\waw_mg42\waw_mg42_d"
+	"$bumpmap"	"alex_d_models\waw_mg42\waw_mg42_n"
+
+	"$phongexponent" "35"
+	"$phongalbedotint" 3
+	"$phong" "1"
+	"$phongboost"	"1"
+	"$phongfresnelranges"	"[1 2.15 1.75]"
+
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask"	"1"
+	"$envmaptint"	"[0.04 0.04 0.04]"
+	"$envmapfresnel"	"1.7"
+
+	$detail "alex_d_models\waw_mg42\heat600000.vtf"
+	$detailscale 1
+	$detailblendfactor .001 
+	$detailblendmode 5
+	$HeatAmount 0
+
+	Proxies
+	{
+		Heat
+		{
+			resultVar $HeatAmount
+		}
+		Equals
+		{
+			srcVar1 $HeatAmount
+			resultVar $detailblendfactor
+		}
+	}
+}
