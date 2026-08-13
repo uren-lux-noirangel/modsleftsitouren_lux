@@ -1,0 +1,29 @@
+VertexLitGeneric
+{
+	"GPU<2"
+	{
+		$baseTexture "models\weapons\melee\pipe_shotgun\pipe_shotgun_diffuse_bakedspec"
+	}
+	"GPU>=2"
+	{
+		$baseTexture "models\weapons\melee\pipe_shotgun\pipe_shotgun_diffuse"
+		//$color "[0.8 0.8 0.8]"
+		$bumpmap "models\weapons\melee\pipe_shotgun\pipe_shotgun_normal"
+		$envmap env_cubemap
+		//$envmap hlmv/cubemap2
+		$basealphaenvmapmask 1
+		
+		$envmaptint "[0.8 0.8 0.8]"
+
+		$phong 1
+		$PhongAlbedoTint 1
+		$halflambert 0
+		$phongboost 10.0
+		//$phongexponent 30
+		$phongexponenttexture "models\weapons\melee\pipe_shotgun\pipe_shotgun_phong"
+		$phongfresnelranges "[0.1 1 5]"
+		
+		$surfaceprop "weapon"
+
+	}
+}

@@ -1,0 +1,4 @@
+VertexLitGeneric
+{
+	$baseTexture "models\weapons\melee\pipe_shotgun\pipe_shotgun_diffuse_bakedspec"
+}

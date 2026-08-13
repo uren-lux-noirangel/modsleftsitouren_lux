@@ -1,0 +1,6 @@
+VertexLitGeneric
+{
+	$baseTexture "models\weapons\melee\pipe_shotgun\flashlight_diffuse"
+	$color "[1.5 1.5 1.5]"
+
+}
